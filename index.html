@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div id="brand" class="brand"></div>
+      <div class="top-actions">
+        <span id="data-badge" class="badge" hidden></span>
+        <button id="btn-refresh" class="icon-btn" title="Actualizar dados">⟳</button>
+        <button id="btn-pdf" class="top-btn" title="Exportar relatório geral em PDF">📄 Relatório PDF</button>
+        <div class="xl-wrap">
+          <button id="btn-xlsx" class="top-btn" title="Descarregar dados em Excel">⬇ Excel ▾</button>
+          <div id="xl-menu" class="xl-menu" hidden>
+            <button data-x="analysed"><b>Dados analisados</b><small>Indicadores, gráficos e tabelas do dashboard</small></button>
+            <button data-x="raw"><b>Dados brutos</b><small>Todos os registos, uma folha por tabela + dicionário de campos</small></button>
+            <button data-x="both"><b>Tudo</b><small>Analisados + brutos num só ficheiro</small></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="wrap tabs" id="tabs"></nav>
+  </header>
+
+  <div class="wrap">
+    <div id="filters" class="filters" hidden></div>
+    <main id="content" class="grid"></main>
+  </div>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div id="footer-text"></div>
+      <a href="admin.html" class="admin-link" title="Área de gestão">⚙ Gestão</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/config-default.js"></script>
+  <script src="js/vendor/jszip.min.js"></script>
+  <script src="js/vendor/pdf-lib.min.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/mock.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/widgets.js"></script>
+  <script src="js/xlsx.js"></script>
+  <script src="js/export.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
