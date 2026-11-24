@@ -1,7 +1,7 @@
 /* Cópia embutida do config.json (usada quando o site é aberto sem servidor). Actualizada automaticamente ao publicar. */
 window.EMBEDDED_CONFIG = {
   "version": 1,
-  "updatedAt": "2026-11-24T14:04:39.219Z",
+  "updatedAt": "2026-11-24T14:05:32.088Z",
   "site": {
     "title": "Diário do Extensionista",
     "subtitle": "Painel de monitoria das actividades de extensão agrária",
@@ -15,7 +15,7 @@ window.EMBEDDED_CONFIG = {
     "showDataBadge": true
   },
   "admin": {
-    "passwordHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
+    "passwordHash": "e42dae5a9fde05fa2b1fe1ff2c81815319dfe3e3e7fcc83939c4fdc239e3705c"
   },
   "dataSource": {
     "mode": "auto",
